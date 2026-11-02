@@ -26,6 +26,7 @@ project(Zeal-Lines C ASM)
 # Application sources
 add_executable(${target_name}
     src/main.c
+    src/assets_generated.c
 )
 
 # SDK dependencies

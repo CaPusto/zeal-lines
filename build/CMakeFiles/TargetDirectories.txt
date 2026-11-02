@@ -1,4 +1,0 @@
-/src/build/CMakeFiles/zeal_lines.dir
-/src/build/CMakeFiles/zeal_lines_bin.dir
-/src/build/CMakeFiles/edit_cache.dir
-/src/build/CMakeFiles/rebuild_cache.dir

@@ -2,8 +2,9 @@
 .venv-assets/
 
 # Build output
-build/
-bin/
+/build/
+/bin/*
+!/bin/run_emu.sh
 lib/
 
 # CMake generated files
@@ -18,3 +19,4 @@ Makefile
 .DS_Store
 
 Screenshots/
+CMakeLists.txt.bak
