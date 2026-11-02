@@ -48,3 +48,10 @@ target_link_libraries(${target_name} PUBLIC
 # Generate Zeal OS output files
 zos_add_outputs(${target_name})
 
+# Copy external graphics tileset to the runtime directory
+add_custom_command(TARGET ${target_name} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${CMAKE_SOURCE_DIR}/assets/zeal_tiles.bin"
+        "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/zeal_tiles.bin"
+    COMMENT "Copying graphics tileset to bin/"
+)
