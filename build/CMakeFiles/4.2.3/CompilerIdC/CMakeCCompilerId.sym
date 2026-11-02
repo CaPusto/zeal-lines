@@ -1,0 +1,43 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180 / ZX-Next / eZ80 / R800)                          Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000000 L
+  7 ___str_0                                                       000093 R
+  7 ___str_1                                                       0000A7 R
+  7 ___str_2                                                       0000B7 R
+  7 ___str_3                                                       0000C3 R
+  7 ___str_4                                                       0000DD R
+  8 __xinit__info_arch                                             000004 R
+  8 __xinit__info_compiler                                         000000 R
+  8 __xinit__info_language_extensions_default                      000008 R
+  8 __xinit__info_language_standard_default                        000006 R
+  8 __xinit__info_platform                                         000002 R
+  2 _info_arch                                                     000004 GR
+  2 _info_compiler                                                 000000 GR
+  2 _info_language_extensions_default                              000008 GR
+  2 _info_language_standard_default                                000006 GR
+  2 _info_platform                                                 000002 GR
+  7 _info_version                                                  000061 GR
+  7 _main                                                          000000 GR
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180 / ZX-Next / eZ80 / R800)                          Page 2
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 _DATA                                      size      0   flags    0
+   2 _INITIALIZED                               size      A   flags    0
+   3 _DABS                                      size      0   flags    8
+   4 _HOME                                      size      0   flags    0
+   5 _GSINIT                                    size      0   flags    0
+   6 _GSFINAL                                   size      0   flags    0
+   7 _TEXT                                      size     FA   flags    0
+   8 _INITIALIZER                               size      A   flags    0
+   9 _CABS                                      size      0   flags    8
+

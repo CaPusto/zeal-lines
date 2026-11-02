@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/src/build",
+  "command": "/opt/sdcc/bin/sdcc  -I/home/zeal8bit/zeal-game-dev-kit/cmake/../include -I/home/zeal8bit/zeal-coreutils/cmake/../libsrc/libcore -I/home/zeal8bit/Zeal-VideoBoard-SDK/cmake/../include -mz80 -I/home/zeal8bit/Zeal-8-bit-OS/sdk/sdcc/include/ --codeseg TEXT -o CMakeFiles/zeal_lines.dir/src/main.c.rel -c /src/src/main.c",
+  "file": "/src/src/main.c",
+  "output": "CMakeFiles/zeal_lines.dir/src/main.c.rel"
+}
+]
