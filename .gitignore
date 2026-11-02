@@ -1,0 +1,20 @@
+# Python virtual environment for asset generation
+.venv-assets/
+
+# Build output
+build/
+bin/
+lib/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# Editor and OS files
+*~
+.DS_Store
+
+Screenshots/
