@@ -11,6 +11,14 @@ The scope is single-player with keyboard, gamepad and mouse input, and SFX only
 (no music). The input layer is kept separate from the game rules; the mouse adds
 its own actions on top of the keyboard and pad.
 
+## Screenshots
+<table>
+  <tr>
+    <td><img src="docs/title.png" alt="Title" width="400"></td>
+    <td><img src="docs/game.png" alt="Game" width="400"></td>
+  </tr>
+</table>
+
 ## Current state
 
 Implemented:
