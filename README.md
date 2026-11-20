@@ -56,3 +56,20 @@ After each turn the game writes `zeal-lines.sav`
 The save is restored on startup. `A` starts a new game
 and overwrites the save; game over clears it. Delete the file to force a fresh
 start.
+
+### Run on real hardware
+
+Copy `zeal-lines` 'zeal-tiles.dat' 'splash.ztm' 'splash.ztp' 'splash.zts' to the SD card or romdisk image used by Zeal 8-bit OS,
+boot the machine and start the program from the OS shell. 
+
+```sh
+ .\zeal-lines.bin
+```
+
+> [!NOTE]
+> The game has only been tested in the `zeal-native` emulator. The developer
+> does not own a real Zeal 8-bit Computer, so it has not been verified on
+> physical hardware. Reports from real machines are very welcome.
+
+## License
+Licensed under the **MIT License**.
