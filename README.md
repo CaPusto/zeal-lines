@@ -47,18 +47,12 @@ cd ~/zeal-projects/zeal-lines
 | Exit to Zeal OS | Right Shift or `'` | Select | — |
 | Game over / scores | `A` new game, `SELECT` exit | A / Select | Left click |
 
-`Enter`/Start is also wired as confirm in the code, but the Native Emulator's
-Return key does not activate it; use `X`/A in the emulator.
-
 A SNES mouse is detected automatically on either controller port; it is purely
 additive and never disables the keyboard or the gamepad. 
 
 ## Autosave
 
-After each turn the game writes `zeal-lines.sav` (tried in `H:`, the current
-directory, then `T:`). The save is restored on startup. `A` starts a new game
+After each turn the game writes `zeal-lines.sav` 
+The save is restored on startup. `A` starts a new game
 and overwrites the save; game over clears it. Delete the file to force a fresh
 start.
-
-Build artifacts, generated binaries, `.git` and virtualenvs are excluded.
-Sources, assets and configuration files are included.
