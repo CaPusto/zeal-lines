@@ -59,7 +59,7 @@ start.
 
 ### Run on real hardware
 
-Copy `zeal-lines` 'zeal-tiles.dat' 'splash.ztm' 'splash.ztp' 'splash.zts' to the SD card or romdisk image used by Zeal 8-bit OS,
+Copy `zeal-lines` `zeal-tiles.dat` `splash.ztm` `splash.ztp` `splash.zts` to the SD card or romdisk image used by Zeal 8-bit OS,
 boot the machine and start the program from the OS shell. 
 
 ```sh
