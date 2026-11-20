@@ -5,7 +5,7 @@ built with the [Zeal Development Environment](https://github.com/zoul0813/zeal-d
 and the [Zeal Video Board SDK](https://github.com/Zeal8bit/Zeal-VideoBoard-SDK).
 
 The game targets Zeal 8-bit OS and the Zeal Video Board in 640×480 4bpp mode.
-It is a single-player game controlled by keyboard, SNES pad or SNES mouse.
+It is a single-player game controlled by a keyboard, SNES pad, or SNES mouse.
 
 ## Screenshots
 <table>
@@ -24,8 +24,8 @@ Implemented:
 - line matches, direct “+” crosses and diagonal “X” crosses;
 - free move after a match;
 - autosave to `zeal-lines.sav`, restored on startup;
-- mouse control (SNES mouse on either pad port) next to keyboard and gamepad;
-- SFX on.
+- mouse control (SNES mouse on either pad port) alongside keyboard and gamepad;
+- sound effects (SFX).
 
 ## Build
 
@@ -52,7 +52,7 @@ additive and never disables the keyboard or the gamepad.
 
 ## Autosave
 
-After each turn the game writes `zeal-lines.sav` 
+After each turn the game writes `zeal-lines.sav`.
 The save is restored on startup. `A` starts a new game
 and overwrites the save; game over clears it. Delete the file to force a fresh
 start.
@@ -69,7 +69,7 @@ boot the machine and start the program from the OS shell.
 > [!NOTE]
 > The game has only been tested in the `zeal-native` emulator. The developer
 > does not own a real Zeal 8-bit Computer, so it has not been verified on
-> physical hardware. Reports from real machines are very welcome.
+> physical hardware. Feedback from real hardware are very welcome.
 
 ## License
 
