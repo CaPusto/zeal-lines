@@ -7,10 +7,6 @@ and the [Zeal Video Board SDK](https://github.com/Zeal8bit/Zeal-VideoBoard-SDK).
 The game targets Zeal 8-bit OS and the Zeal Video Board in 640×480 4bpp mode.
 It is a single-player game controlled by keyboard, SNES pad or SNES mouse.
 
-The scope is single-player with keyboard, gamepad and mouse input, and SFX only
-(no music). The input layer is kept separate from the game rules; the mouse adds
-its own actions on top of the keyboard and pad.
-
 ## Screenshots
 <table>
   <tr>
