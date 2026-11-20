@@ -72,4 +72,7 @@ boot the machine and start the program from the OS shell.
 > physical hardware. Reports from real machines are very welcome.
 
 ## License
-Licensed under the **MIT License**.
+
+This project is a non-commercial fan remake created for preservation and educational purposes.  
+
+[MIT](LICENSE)
