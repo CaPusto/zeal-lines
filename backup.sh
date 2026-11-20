@@ -2,7 +2,7 @@
 #
 # Create a timestamped backup of zeal-lines in ~/backups.
 #
-# Sources, assets, docs and configuration files are included.
+# Sources, assets and configuration files are included.
 # Rebuildable artifacts (build/, bin/, generated binaries, virtualenvs) and
 # runtime data (saves, high scores) are excluded.
 #

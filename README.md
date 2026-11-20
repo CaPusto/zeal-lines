@@ -7,11 +7,9 @@ and the [Zeal Video Board SDK](https://github.com/Zeal8bit/Zeal-VideoBoard-SDK).
 The game targets Zeal 8-bit OS and the Zeal Video Board in 640×480 4bpp mode.
 It is a single-player game controlled by keyboard, SNES pad or SNES mouse.
 
-The product design document is [`docs/GAME-DESIGN.md`](docs/GAME-DESIGN.md);
-the confirmed scope is documented in [`docs/SCOPE.md`](docs/SCOPE.md):
-single-player, keyboard/gamepad/mouse, SFX only (no music). The input layer is
-kept separate from the game rules; the mouse adds its own actions on top of the
-keyboard and pad.
+The scope is single-player with keyboard, gamepad and mouse input, and SFX only
+(no music). The input layer is kept separate from the game rules; the mouse adds
+its own actions on top of the keyboard and pad.
 
 ## Current state
 
@@ -68,9 +66,8 @@ The pure game logic can be tested on the host without the Zeal toolchain:
 ```
 
 The tests cover lines, direct crosses, diagonal crosses, duplicate-free scoring,
-pathfinding, moves, preview spawning and the full-board game-over condition.
-
-The exact match rules are documented in [`docs/MATCH_RULES.md`](docs/MATCH_RULES.md).
+pathfinding, moves, preview spawning and the full-board game-over condition. A
+ball counts once per move even when several lines cross it.
 
 ## Run in the emulator
 
@@ -121,15 +118,14 @@ continues; on the table `A`/Start/B/click starts a new game and `SELECT` exits.
 ## Sound
 
 SFX only, no music. Four ZVB voices handle selection, movement, spawning,
-clearing and game over. Clearing more than six balls raises the tone. Details:
-[`docs/SOUND.md`](docs/SOUND.md).
+clearing and game over. Clearing more than six balls raises the tone.
 
 ## Randomness
 
 The ZGDK LFSR is seeded from the DS1307 RTC date/time, the millisecond timer
 when available, and 16 samples of the Z80 refresh register `R`. The values are
 mixed into a non-zero 16-bit seed; color and empty-cell selection use rejection
-sampling to avoid modulo bias. See [`docs/RANDOM.md`](docs/RANDOM.md).
+sampling to avoid modulo bias.
 
 ## Autosave
 
@@ -160,9 +156,9 @@ sprites. The generated files are committed:
 - `src/assets_generated.c`
 - `src/assets_generated.h`
 
-The implemented 512-tile layout, palette groups, HUD/preview budget, actual
-screenshots and animation plan are described in
-[`docs/ASSETS.md`](docs/ASSETS.md).
+The implemented 512-tile layout, palette groups and HUD/preview budget are
+defined by `tools/prepare_assets.py`; the tile indices are mirrored in
+`src/assets_generated.h`.
 
 The generator needs Python 3 with Pillow and network access to the upstream L2
 repository.
@@ -176,4 +172,4 @@ Create a timestamped archive in `~/backups`:
 ```
 
 Build artifacts, generated binaries, `.git` and virtualenvs are excluded.
-Sources, assets, docs and configuration files are included.
+Sources, assets and configuration files are included.
