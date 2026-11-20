@@ -1,11 +1,20 @@
 # Python virtual environment for asset generation
 .venv-assets/
+__pycache__/
+*.pyc
 
 # Build output
 /build/
+/tests/build/
 /bin/*
-!/bin/run_emu.sh
 lib/
+
+# Generated asset previews
+/assets/atlas_preview.png
+
+# Runtime data written when the game is run from the project root
+/zeal-lines.sav
+/zeal-scores.dat
 
 # CMake generated files
 CMakeFiles/
@@ -13,10 +22,9 @@ CMakeCache.txt
 cmake_install.cmake
 compile_commands.json
 Makefile
+*.bak
 
 # Editor and OS files
 *~
 .DS_Store
-
-Screenshots/
-CMakeLists.txt.bak
+*.sav
